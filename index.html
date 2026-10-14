@@ -1,194 +1,143 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Léa Maths — professeur de mathématiques à Valence : soutien scolaire, collège, lycée, préparation au bac et CESU.">
-  <title>Léa Maths | Professeur de mathématiques à Valence</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Léa - Professeur de Mathématiques à Valence</title>
+    
+    <!-- Polices Google (Poppins pour les titres, Inter pour le texte) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icônes FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- Styles externes -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container header-row">
-      <a class="brand" href="#">Léa<span>Maths</span></a>
-      <nav class="nav" aria-label="Menu principal">
-        <ul>
-          <li><a href="#accueil">Accueil</a></li>
-          <li><a href="#pedagogie">Pédagogie</a></li>
-          <li><a href="#niveaux">Niveaux</a></li>
-          <li><a class="cta" href="#contact">Contact</a></li>
+
+    <!-- HEADER / NAVIGATION -->
+    <header>
+        <a href="#" class="logo">Léa<span>Maths</span></a>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#pedagogie">Pédagogie</a></li>
+            <li><a href="#niveaux">Niveaux & Tarifs</a></li>
         </ul>
-      </nav>
-    </div>
-  </header>
+        <a href="#contact" class="btn btn-primary">Réserver un cours</a>
+    </header>
 
-  <main>
+    <!-- SECTION ACCUEIL -->
     <section id="accueil" class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <p class="tag">Professeur de mathématiques — Valence</p>
-          <h1>Des cours clairs, bienveillants et efficaces</h1>
-          <p class="lead">
-            Accompagnement personnalisé pour collège, lycée et supérieur. J’aide chaque élève à retrouver confiance,
-            comprendre les notions et progresser à son rythme avec une méthode structurée et rassurante.
-          </p>
-
-          <div class="actions">
-            <a class="btn btn-primary" href="#contact">Réserver un cours</a>
-            <a class="btn btn-secondary" href="#pedagogie">Découvrir ma méthode</a>
-          </div>
-
-          <ul class="bullets">
-            <li><i class="fa-solid fa-check"></i> Bilan initial</li>
-            <li><i class="fa-solid fa-check"></i> Cours à domicile ou en ligne</li>
-            <li><i class="fa-solid fa-check"></i> 50% de crédit d’impôt</li>
-          </ul>
+        <div class="hero-text">
+            <h1>Maîtrisez les mathématiques avec confiance.</h1>
+            <p>Professeure de mathématiques titulaire, passionnée par la transmission des savoirs. Forte d'une solide formation scientifique avec un Master en Mathématiques Fondamentales et un[...]</p>
+            <a href="#pedagogie" class="btn btn-accent">Découvrir ma méthode</a>
         </div>
-
-        <figure class="hero-figure">
-          <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Illustration d'un cours de mathématiques">
-          <span class="floating-badge"><strong>+90%</strong><small>confiance retrouvée</small></span>
-        </figure>
-      </div>
+        <div class="hero-image">
+            <!-- Image d'illustration libre de droits (Unsplash) -->
+            <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Cours de mathématiques à domicile">
+        </div>
     </section>
 
-    <section class="stats-strip">
-      <div class="container stats-grid">
-        <div class="stat">
-          <strong>10+</strong>
-          <span>années d’expérience</span>
+    <!-- SECTION PEDAGOGIE -->
+    <section id="pedagogie">
+        <h2 class="section-title">Une pédagogie moderne et positive</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fa-solid fa-crosshairs"></i>
+                <h3>1. Bilan Initial</h3>
+                <p>Évaluation des acquis et des lacunes pour créer un parcours sur-mesure dès la première séance.</p>
+            </div>
+            <div class="card">
+                <i class="fa-regular fa-lightbulb"></i>
+                <h3>2. Compréhension</h3>
+                <p>Reprise des notions du cours avec des explications claires, visuelles et des exemples concrets.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-pen-ruler"></i>
+                <h3>3. Entraînement</h3>
+                <p>Réalisation d'exercices progressifs et acquisition de méthodes de résolution solides.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>4. Suivi et Confiance</h3>
+                <p>Préparation aux évaluations, gestion du stress et accompagnement régulier pour retrouver confiance en soi.</p>
+            </div>
         </div>
-        <div class="stat">
-          <strong>100%</strong>
-          <span>suivi personnalisé</span>
-        </div>
-        <div class="stat">
-          <strong>50%</strong>
-          <span>crédit d’impôt</span>
-        </div>
-        <div class="stat">
-          <strong>1:1</strong>
-          <span>accompagnement humain</span>
-        </div>
-      </div>
     </section>
 
-    <section id="pedagogie" class="section section-soft">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Pédagogie</p>
-          <h2>Une méthode claire, rassurante et orientée résultats</h2>
+    <!-- SECTION NIVEAUX ET TARIFS -->
+    <section id="niveaux" style="background-color: var(--bg-light);">
+        <h2 class="section-title">Niveaux Enseignés</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Collège & Brevet</h3>
+                <ul>
+                    <li>Remise à niveau en 6ème/5ème</li>
+                    <li>Acquisition des bases (4ème/3ème)</li>
+                    <li>Préparation intensive au Brevet</li>
+                    <li>Aide aux devoirs régulière</li>
+                </ul>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-book-open"></i>
+                <h3>Lycée & Baccalauréat</h3>
+                <ul>
+                    <li>Seconde générale</li>
+                    <li>Spécialité Mathématiques (1ère/Term)</li>
+                    <li>Mathématiques Complémentaires</li>
+                    <li>Préparation au Grand Oral</li>
+                </ul>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-user-graduate"></i>
+                <h3>Supérieur & Adultes</h3>
+                <ul>
+                    <li>Préparation aux concours</li>
+                    <li>BTS / BUT / Licence</li>
+                    <li>Remise à niveau pour adultes</li>
+                    <li>Reprise d'études</li>
+                </ul>
+            </div>
         </div>
 
-        <div class="grid feature-grid">
-          <article class="card feature-card">
-            <div class="icon-wrap"><i class="fa-solid fa-circle-check"></i></div>
-            <h3>Bilan Initial</h3>
-            <p>Diagnostic clair des besoins pour construire un parcours sur-mesure dès le premier cours.</p>
-          </article>
-
-          <article class="card feature-card">
-            <div class="icon-wrap"><i class="fa-solid fa-lightbulb"></i></div>
-            <h3>Compréhension</h3>
-            <p>Les notions sont reprises avec pédagogie, exemples concrets et explications visuelles.</p>
-          </article>
-
-          <article class="card feature-card">
-            <div class="icon-wrap"><i class="fa-solid fa-pencil-ruler"></i></div>
-            <h3>Entraînement</h3>
-            <p>Exercices progressifs, méthodes de résolution et autonomie gagnée petit à petit.</p>
-          </article>
-
-          <article class="card feature-card">
-            <div class="icon-wrap"><i class="fa-solid fa-chart-line"></i></div>
-            <h3>Suivi & Confiance</h3>
-            <p>Préparation aux évaluations et accompagnement régulier pour retrouver confiance en soi.</p>
-          </article>
+        <div class="cesu-banner">
+            <h4><i class="fa-solid fa-euro-sign"></i> Tarifs clairs & 50% de crédit d'impôt</h4>
+            <p style="margin-top: 10px; color: var(--text-main);">
+                En tant que particulier employeur (via le dispositif <strong>CESU</strong>), vous bénéficiez d'une <strong>déduction fiscale de 50%</strong> sur toutes les heures de cours.<br>
+                <em>Exemple : Un cours à 60€ ne vous coûte que 30€ après avantage fiscal.</em>
+            </p>
+            <p style="margin-top: 15px; font-weight: 500;">À partir de 60 € / heure (soit 30 € après déduction fiscale)</p>
         </div>
-      </div>
     </section>
 
-    <section id="niveaux" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow eyebrow-dark">Niveaux enseignés</p>
-          <h2>Un accompagnement adapté à chaque étape</h2>
+    <!-- FOOTER / CONTACT -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>[Prénom] - Prof de Maths</h3>
+                <p>Je me déplace à votre domicile pour accompagner votre enfant vers la réussite en mathématiques.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contactez-moi</h3>
+                <p><i class="fa-solid fa-phone"></i> 06 XX XX XX XX</p>
+                <p><i class="fa-solid fa-envelope"></i> email@exemple.com</p>
+            </div>
+            <div class="footer-col">
+                <h3>Zone d'intervention</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Valence (26000)</p>
+                <p><i class="fa-solid fa-map-pin"></i> Bourg-lès-Valence</p>
+                <p><i class="fa-solid fa-map-pin"></i> Guilherand-Granges</p>
+            </div>
         </div>
-
-        <div class="grid level-grid">
-          <article class="card card-level">
-            <div class="icon-wrap"><i class="fa-solid fa-graduation-cap"></i></div>
-            <h3>Collège & Brevet</h3>
-            <ul>
-              <li>Remise à niveau</li>
-              <li>Acquisition des bases</li>
-              <li>Préparation au Brevet</li>
-              <li>Aide aux devoirs</li>
-            </ul>
-          </article>
-
-          <article class="card card-level">
-            <div class="icon-wrap"><i class="fa-solid fa-book-open"></i></div>
-            <h3>Lycée & Bac</h3>
-            <ul>
-              <li>Seconde générale</li>
-              <li>Spécialité mathématiques</li>
-              <li>Maths complémentaires</li>
-              <li>Préparation au Grand Oral</li>
-            </ul>
-          </article>
-
-          <article class="card card-level">
-            <div class="icon-wrap"><i class="fa-solid fa-user-graduate"></i></div>
-            <h3>Supérieur & Adultes</h3>
-            <ul>
-              <li>BTS / BUT / Licence</li>
-              <li>Préparation aux concours</li>
-              <li>Remise à niveau</li>
-              <li>Reprise d’études</li>
-            </ul>
-          </article>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Maths Valence - Site créé pour . Tous droits réservés.</p>
         </div>
+    </footer>
 
-        <div class="promo-box">
-          <div class="promo-icon"><i class="fa-solid fa-euro-sign"></i></div>
-          <h3>Tarifs clairs & crédit d’impôt</h3>
-          <p>En tant que particulier employeur, vous bénéficiez d’une déduction fiscale de 50% via le dispositif CESU.</p>
-          <strong>À partir de 60 € / heure</strong>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer id="contact" class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-col">
-        <h4>Léa Maths</h4>
-        <p>Je me déplace à votre domicile pour accompagner votre enfant vers la réussite en mathématiques.</p>
-      </div>
-
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <p><i class="fa-solid fa-phone"></i> 06 XX XX XX XX</p>
-        <p><i class="fa-solid fa-envelope"></i> email@exemple.com</p>
-      </div>
-
-      <div class="footer-col">
-        <h4>Zone d’intervention</h4>
-        <p><i class="fa-solid fa-location-dot"></i> Valence (26000)</p>
-        <p><i class="fa-solid fa-map-pin"></i> Bourg-lès-Valence</p>
-        <p><i class="fa-solid fa-map-pin"></i> Guilherand-Granges</p>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2026 Léa Maths — Tous droits réservés.</p>
-    </div>
-  </footer>
 </body>
 </html>
