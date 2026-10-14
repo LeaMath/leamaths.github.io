@@ -1,305 +1,197 @@
-/* --- VARIABLES DE COULEURS ET STYLES --- */
-:root {
-    --primary: #0f172a; /* Bleu très foncé */
-    --secondary: #3b82f6; /* Bleu clair */
-    --accent: #f97316; /* Orange pour les boutons d'action */
-    --bg-light: #f8fafc;
-    --text-main: #334155;
-    --text-muted: #64748b;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Léa Maths - professeur de mathématiques à Valence, accompagnement scolaire, soutien, lycée, collège, CESU.">
+    <title>Léa - Professeur de Mathématiques à Valence</title>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="logo">Léa<span>Maths</span></a>
+            <nav aria-label="Navigation principale">
+                <ul class="nav-links">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#pedagogie">Pédagogie</a></li>
+                    <li><a href="#niveaux">Niveaux & Tarifs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="btn btn-primary">Réserver un cours</a>
+        </div>
+    </header>
 
-html {
-    scroll-behavior: smooth;
-}
+    <main>
+        <section id="accueil" class="hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <span class="eyebrow">Professeur de mathématiques à Valence</span>
+                    <h1>Maîtrisez les mathématiques avec confiance.</h1>
+                    <p>
+                        Professeure de mathématiques titulaire, passionnée par la transmission des savoirs.
+                        Forte d'une solide formation scientifique avec un Master en Mathématiques Fondamentales,
+                        je vous accompagne dans un cadre bienveillant, structuré et motivant pour faire progresser
+                        chacun à son rythme.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#pedagogie" class="btn btn-accent">Découvrir ma méthode</a>
+                        <a href="#contact" class="btn btn-secondary">Parler avec Léa</a>
+                    </div>
+                    <ul class="hero-points">
+                        <li><i class="fa-solid fa-check"></i> Accompagnement personnalisé</li>
+                        <li><i class="fa-solid fa-check"></i> Cours au domicile ou en ligne</li>
+                        <li><i class="fa-solid fa-check"></i> Progression rapide et durable</li>
+                    </ul>
+                </div>
 
-body {
-    font-family: 'Inter', sans-serif;
-    color: var(--text-main);
-    line-height: 1.6;
-    background-color: #ffffff;
-}
+                <div class="hero-visual" aria-label="Illustration de cours de mathématiques">
+                    <div class="image-card">
+                        <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Cours de mathématiques à domicile">
+                    </div>
+                    <div class="floating-badge">
+                        <strong>+90%</strong>
+                        <span>de confiance retrouvée</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-h1, h2, h3, h4 {
-    font-family: 'Poppins', sans-serif;
-    color: var(--primary);
-}
+        <section class="trust-bar" aria-label="Statistiques de la pédagogie">
+            <div class="container trust-grid">
+                <div class="trust-item">
+                    <strong>10+</strong>
+                    <span>années d’expérience</span>
+                </div>
+                <div class="trust-item">
+                    <strong>100%</strong>
+                    <span>suivi personnalisé</span>
+                </div>
+                <div class="trust-item">
+                    <strong>50%</strong>
+                    <span>de crédit d’impôt</span>
+                </div>
+                <div class="trust-item">
+                    <strong>1:1</strong>
+                    <span>encadrement humain</span>
+                </div>
+            </div>
+        </section>
 
-/* --- NAVIGATION --- */
-header {
-    background-color: white;
-    padding: 1rem 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
+        <section id="pedagogie" class="section section-light">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow eyebrow-dark">Pédagogie</span>
+                    <h2>Une pédagogie moderne, claire et rassurante</h2>
+                </div>
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primary);
-    text-decoration: none;
-}
-    
-.logo span {
-    color: var(--secondary);
-    font-weight: 300;
-}
+                <div class="grid feature-grid">
+                    <article class="card feature-card">
+                        <div class="icon-wrap"><i class="fa-solid fa-crosshairs"></i></div>
+                        <h3>1. Bilan Initial</h3>
+                        <p>Évaluation des acquis et des lacunes pour construire un parcours sur-mesure dès la première séance.</p>
+                    </article>
+                    <article class="card feature-card">
+                        <div class="icon-wrap"><i class="fa-regular fa-lightbulb"></i></div>
+                        <h3>2. Compréhension</h3>
+                        <p>Reprise des notions du cours avec des explications claires, visuelles et des exemples concrets.</p>
+                    </article>
+                    <article class="card feature-card">
+                        <div class="icon-wrap"><i class="fa-solid fa-pen-ruler"></i></div>
+                        <h3>3. Entraînement</h3>
+                        <p>Réalisation d'exercices progressifs et acquisition de méthodes de résolution solides.</p>
+                    </article>
+                    <article class="card feature-card">
+                        <div class="icon-wrap"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3>4. Suivi & Confiance</h3>
+                        <p>Préparation aux évaluations, gestion du stress et accompagnement régulier pour retrouver confiance en soi.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-}
+        <section id="niveaux" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow eyebrow-dark">Niveaux enseignés</span>
+                    <h2>Un accompagnement adapté à chaque étape</h2>
+                </div>
 
-.nav-links a {
-    text-decoration: none;
-    color: var(--text-main);
-    font-weight: 500;
-    transition: color 0.3s;
-}
+                <div class="grid level-grid">
+                    <article class="card level-card">
+                        <div class="icon-wrap"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3>Collège & Brevet</h3>
+                        <ul>
+                            <li>Remise à niveau en 6ème/5ème</li>
+                            <li>Acquisition des bases (4ème/3ème)</li>
+                            <li>Préparation intensive au Brevet</li>
+                            <li>Aide aux devoirs régulière</li>
+                        </ul>
+                    </article>
 
-.nav-links a:hover {
-    color: var(--secondary);
-}
+                    <article class="card level-card">
+                        <div class="icon-wrap"><i class="fa-solid fa-book-open"></i></div>
+                        <h3>Lycée & Baccalauréat</h3>
+                        <ul>
+                            <li>Seconde générale</li>
+                            <li>Spécialité Mathématiques (1ère/Term)</li>
+                            <li>Mathématiques Complémentaires</li>
+                            <li>Préparation au Grand Oral</li>
+                        </ul>
+                    </article>
 
-/* --- BOUTONS --- */
-.btn {
-    padding: 0.8rem 1.5rem;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: transform 0.2s, box-shadow 0.2s;
-    display: inline-block;
-}
+                    <article class="card level-card">
+                        <div class="icon-wrap"><i class="fa-solid fa-user-graduate"></i></div>
+                        <h3>Supérieur & Adultes</h3>
+                        <ul>
+                            <li>Préparation aux concours</li>
+                            <li>BTS / BUT / Licence</li>
+                            <li>Remise à niveau pour adultes</li>
+                            <li>Reprise d'études</li>
+                        </ul>
+                    </article>
+                </div>
 
-.btn-primary {
-    background-color: var(--primary);
-    color: white;
-}
+                <div class="cesu-banner">
+                    <div class="cesu-icon"><i class="fa-solid fa-euro-sign"></i></div>
+                    <h4>Tarifs clairs & 50% de crédit d’impôt</h4>
+                    <p class="lead">
+                        En tant que particulier employeur (via le dispositif <strong>CESU</strong>), vous bénéficiez d'une <strong>déduction fiscale de 50%</strong> sur toutes les heures de cours.<br>
+                        <em>Exemple : Un cours à 60€ ne vous coûte que 30€ après avantage fiscal.</em>
+                    </p>
+                    <p class="price">À partir de 60 € / heure (soit 30 € après déduction fiscale)</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-.btn-primary:hover {
-    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.3);
-    transform: translateY(-2px);
-}
-
-.btn-accent {
-    background-color: var(--accent);
-    color: white;
-}
-
-.btn-accent:hover {
-    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
-    transform: translateY(-2px);
-}
-
-/* --- SECTION HERO (Accueil) --- */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5rem 5%;
-    background-color: var(--bg-light);
-    min-height: 80vh;
-}
-
-.hero-text {
-    flex: 1;
-    padding-right: 3rem;
-}
-
-.hero-text h1 {
-    font-size: 3rem;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
-}
-
-.hero-text p {
-    font-size: 1.1rem;
-    color: var(--text-muted);
-    margin-bottom: 2rem;
-    max-width: 500px;
-}
-
-.hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.hero-image img {
-    width: 100%;
-    max-width: 550px;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-    object-fit: cover;
-}
-
-/* --- SECTIONS COMMUNES --- */
-.section-title {
-    text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 3rem;
-}
-
-section {
-    padding: 6rem 5%;
-}
-
-/* --- GRILLES (Méthodo & Niveaux) --- */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.card {
-    background: white;
-    padding: 2.5rem 2rem;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-    border: 1px solid #f1f5f9;
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card i {
-    font-size: 2.5rem;
-    color: var(--secondary);
-    margin-bottom: 1.5rem;
-}
-
-.card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-}
-
-.card p {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-}
-    
-.card ul {
-    list-style: none;
-    text-align: left;
-    margin-top: 1rem;
-    color: var(--text-muted);
-    font-size: 0.95rem;
-}
-    
-.card ul li {
-    margin-bottom: 0.5rem;
-}
-    
-.card ul li::before {
-    content: "✓";
-    color: var(--secondary);
-    margin-right: 8px;
-    font-weight: bold;
-}
-
-/* --- BANNIERE CESU --- */
-.cesu-banner {
-    background-color: #e0f2fe;
-    padding: 2rem;
-    border-radius: 15px;
-    text-align: center;
-    margin: 3rem auto 0;
-    max-width: 800px;
-    border: 2px dashed var(--secondary);
-}
-    
-.cesu-banner h4 {
-    color: #0284c7;
-    font-size: 1.2rem;
-}
-
-.cesu-banner p.lead {
-    margin-top: 10px;
-    color: var(--text-main);
-}
-
-.cesu-banner p.price {
-    margin-top: 15px;
-    font-weight: 500;
-}
-
-/* --- CONTACT & FOOTER --- */
-footer {
-    background-color: var(--primary);
-    color: white;
-    padding: 4rem 5% 2rem;
-}
-
-.footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 3rem;
-    margin-bottom: 3rem;
-}
-
-.footer-col h3 {
-    color: white;
-    margin-bottom: 1.5rem;
-    font-size: 1.2rem;
-}
-
-.footer-col p {
-    color: #94a3b8;
-    margin-bottom: 0.8rem;
-}
-    
-.footer-col i {
-    width: 25px;
-    color: var(--secondary);
-}
-
-.footer-bottom {
-    text-align: center;
-    padding-top: 2rem;
-    border-top: 1px solid #1e293b;
-    color: #64748b;
-    font-size: 0.9rem;
-}
-
-/* --- RESPONSIVE (Mobiles) --- */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column-reverse;
-        text-align: center;
-        padding-top: 3rem;
-    }
-    .hero-text {
-        padding-right: 0;
-        margin-top: 2rem;
-    }
-    .hero-text p {
-        margin: 0 auto 2rem;
-    }
-    .nav-links {
-        display: none; /* A cacher sur mobile pour plus de simplicité, ou transformer en menu burger */
-    }
-    h1 {
-        font-size: 2.2rem;
-    }
-}
-
-/* Section spécifique: niveaux (remplacé l'inline-style) */
-#niveaux {
-    background-color: var(--bg-light);
-}
+    <footer id="contact" class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-col branding">
+                <h3>Léa Maths</h3>
+                <p>Je me déplace à votre domicile pour accompagner votre enfant vers la réussite en mathématiques.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contactez-moi</h3>
+                <p><i class="fa-solid fa-phone"></i> 06 XX XX XX XX</p>
+                <p><i class="fa-solid fa-envelope"></i> email@exemple.com</p>
+            </div>
+            <div class="footer-col">
+                <h3>Zone d'intervention</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Valence (26000)</p>
+                <p><i class="fa-solid fa-map-pin"></i> Bourg-lès-Valence</p>
+                <p><i class="fa-solid fa-map-pin"></i> Guilherand-Granges</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Maths Valence - Site créé pour soutenir la réussite de chacun. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
